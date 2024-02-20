@@ -1,8 +1,6 @@
 # SmartHub-API
 Python Web Scraper for SmartHub
 
-2054746 — fordz0
-
 ### Weather
 https://openweathermap.org/api
 https://open-meteo.com
