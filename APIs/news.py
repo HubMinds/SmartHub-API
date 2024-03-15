@@ -39,6 +39,6 @@ if response.status_code == 200:
         for article in data["articles"]:
             print(article["title"])
     else:
-        print("No articles found.")
+        print("No articles found. yyyyyyyyyyyyy")
 else:
     print("Error:", response.json()["message"])
