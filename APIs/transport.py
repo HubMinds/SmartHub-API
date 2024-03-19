@@ -36,7 +36,7 @@ def get_geo_data(city, country_code, api_key):
 def get_journey_data(lonlat_from, lonlat_to):
     url = f"http://transportapi.com/v3/uk/public/journey/from/{lonlat_from}/to/{lonlat_to}.json"
     params = {
-        "service": "silverrail",
+        "service": "transportapi_otp",
         "app_id": appId,
         "app_key": appKey
     }
