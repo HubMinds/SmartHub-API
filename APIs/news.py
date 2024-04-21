@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 ## load .env and get api key from file
 load_dotenv()
 
+categories = ["business", "entertainment", "general", "health", "science", "sports", "technology"]
+sources = ["bbc-news", "google-news"]
 
 api_key = os.getenv("NEWS_KEY")
 
@@ -41,6 +43,10 @@ if response.status_code == 200:
             print(article["url"])
             print(article["urlToImage"])
     else:
-        print("No articles found. yyyyyyyyyyyyy")
+        print("No articles found.")
 else:
     print("Error:", response.json()["message"])
+    
+##print(data) outputs json file
+    
+print(data)
