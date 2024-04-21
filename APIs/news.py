@@ -38,6 +38,8 @@ if response.status_code == 200:
         # print only the titles of the top articles
         for article in data["articles"]:
             print(article["title"])
+            print(article["url"])
+            print(article["urlToImage"])
     else:
         print("No articles found. yyyyyyyyyyyyy")
 else:
