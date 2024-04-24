@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env
 load_dotenv()
-api_key = "c382d2eeff5efdbfd89c583b367c1949"
+api_key = os.getenv("WEATHER_ID")
 
 def get_geo_data(city, country_code):
     print(f"Fetching geo data for city: {city}, country: {country_code}")
